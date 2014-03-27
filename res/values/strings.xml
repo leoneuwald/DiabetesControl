@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+	<string name="hello">Hello World, DiabetesControlActivity!</string>
+	<string name="app_name">DiabetesControl</string>
+	<string name="tipoRegistro">Tipo Registro</string>
+	<string name="tipoMedicamento">Tipo Medicamento</string>
+	<string name="medicamento">Medicamento</string>
+	<string name="adicionar">Adicionar</string>
+	<string name="consultar">Consultar</string>
+	<string name="graficos">Gráficos</string>
+	<string name="relatorios">Relatórios</string>
+	<string name="configuracoes">Configurações</string>
+	<string name="tipo">Tipo</string>
+	<string name="datahora">Data/Hora</string>
+	<string name="data">Data</string>
+	<string name="hora">Hora</string>
+	<string name="categoria">Categoria</string>
+	<string name="valor">Valor</string>
+	<string name="salvar">Salvar</string>
+	<string name="limpar">Limpar</string>
+	<string-array name="tipoReg_array">
+		<item>Glicose</item>
+		<item>Medicamento</item>
+		<item>Peso</item>
+		<item>Pressão</item>
+		<item>Pulso</item>
+		<item>Gordura</item>
+		<item>HbA1c</item>
+	</string-array>
+	<string name="tipoCategoria">Tipo Categoria</string>
+	<string-array name="tipoCat_array">
+		<item>Antes do Café</item>
+		<item>Depois do Café</item>
+		<item>Antes do Almoço</item>
+		<item>Depois da Almoço</item>
+		<item>Antes do Lanche</item>
+		<item>Depois do Lanche</item>
+		<item>Antes da Janta</item>
+		<item>Depois da Janta</item>
+	</string-array>
+	<string-array name="sexo_array">
+		<item>Masculino</item>
+		<item>Feminino</item>
+	</string-array>
+	<string-array name="nome_modo">
+		<item>Médico</item>
+		<item>Paciente</item>
+	</string-array>
+	<string-array name="opcao_modo">
+		<item>M</item>
+		<item>P</item>
+	</string-array>
+	<string name="ContextoDados_onCreate">
+		CREATE TABLE Registro (ID INTEGER PRIMARY KEY
+		AUTOINCREMENT, Tipo TEXT, Categoria TEXT, Valor INT);
+	</string>
+	<string name="ContextoDados_onUpgrade">"
+		DROP TABLE IF EXISTS Registro
+	</string>
+	<string name="registros">Registros</string>
+	<string name="filtro">Filtros Consulta</string>
+	<string name="consultas">Consultas</string>
+	<string name="regdia">Registros por dia</string>
+	<string name="glicoultregs">Glicose últimos registros</string>
+	<string name="glicomedias">Glicose média</string>
+	<string name="insulaplic">Insulina aplicações</string>
+	<string name="pesomed">Peso médio</string>
+	<string name="glicovalor">Glicose por valor</string>
+	<string name="geraltipo">Geral por tipo</string>
+	<string name="hoje">Hoje</string>
+	<string name="traco">--</string>
+	<string name="semreg">Sem Registros</string>
+	<string name="periodo">Período</string>
+	<string name="ontem">Ontem</string>
+	<string name="semana">Semana atual</string>
+	<string name="semanapass">Semana passada</string>
+	<string name="mes">Mês atual</string>
+	<string name="mespass">Mês passado</string>
+	<string name="ano">Anual</string>
+	<string name="geral">Geral</string>
+	<string name="valormax">Valor Máximo</string>
+	<string name="valormim">Valor Mínimo</string>
+	<string name="nomepac">Nome</string>
+	<string name="datapac">Data Nascimento</string>
+	<string name="emailpac">E-mail</string>
+	<string name="sexo">Sexo</string>
+	<string name="configs_label">Configurações</string>
+	<string name="configs_title">Configs do programa</string>
+	<string name="configs_atalhos">s</string>
+	<string name="ws_titulo">Sincronização</string>
+	<string name="ws_resumo">Caso selecionado, irá realizar a sincronização dos
+		registros
+	</string>
+	<string name="modo_titulo">Módulo do Aparelho</string>
+	<string name="modo_resumo">Configura o sistema como sistema do médico ou
+		paciente
+	</string>
+	<string name="selecpaciente">Selecionar Paciente</string>
+	<string name="sempac">Sem Pacientes</string>
+	<string name="cadpaciente">Paciente</string>
+	<string name="cadmedico">Add Medico</string>
+	<string name="addpaciente">Add paciente</string>
+	<string name="preferencias">Preferências</string>
+	<string name="codPaciente">Código Paciente</string>
+	<string name="senha">Senha</string>
+	<string name="emailHint">E-mail do paciente</string>
+	<string name="nomePacienteHint">Nome do paciente</string>
+	<string name="codPacIntegracao">Código para integração</string>
+	<string name="senhaHint">Senha para integração</string>
+	<string name="registromedico">Registro Médico</string>
+	<string name="registromedicohint">Registro do Médico</string>
+	<string name="codMedico">Código Médico</string>
+	<string name="emailmedico">E-mail do Médico</string>
+	<string name="nomemedico">Nome do Médico</string>
+	<string name="helpAddPaciente">Informe o código e senha do cadastrados no
+		dispositivo do paciente, para acessar suas informações.
+	</string>
+	<string name="notasmedicas">Notas Médicas</string>
+	<string name="graficosPaciente">Gráficos</string>
+	<string name="diabetescontrol">Diabetes Control</string>
+	<string name="editar">Editar</string>
+	<string name="cadregistrotitle">Cadastro de Registros</string>
+	<string name="qtde">qtde</string>
+	<string name="edicaotitulo">Editar Registros</string>
+	<string name="graficosdasmaiores">Maiores marcações por tipo</string>
+	<string name="mediasglicosegraficos">Glicose por categoria</string>
+	<string name="ultimosregistro">Últimos registro</string>
+	<string name="MCatUldias">Média por categoria últimos dias</string>
+	<string name="notamedica">Nota Médica</string>
+	<string name="consultarnotas">Consulta Notas</string>
+	<string name="pacientes">Lista Pacientes</string>
+</resources>

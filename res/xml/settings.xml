@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="opt_geral"
+        android:title="Opções Gerais" >
+        <ListPreference
+            android:dialogTitle="@string/modo_titulo"
+            android:entries="@array/nome_modo"
+            android:entryValues="@array/opcao_modo"
+            android:key="tipomodo"
+            android:summary="@string/modo_resumo"
+            android:title="@string/modo_titulo" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="webservice"
+            android:summary="@string/ws_resumo"
+            android:title="@string/ws_titulo" />
+
+        <EditTextPreference
+            android:defaultValue="192.168.1.101"
+            android:key="endereco_ws"
+            android:summary="Define o endereço IP do Web Service"
+            android:title="Endereço WS" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="opt_diabetes"
+        android:title="Opções de Unidades" >
+        <EditTextPreference
+            android:defaultValue="mmol/l"
+            android:key="unidade_glicose"
+            android:summary="Define a unidade de medida da glicose"
+            android:title="Unidade glicose" />
+        <EditTextPreference
+            android:defaultValue="3mL"
+            android:key="unidade_medicamento"
+            android:summary="Define a unidade de medida do medicamento"
+            android:title="Unidade medicamento" />
+        <EditTextPreference
+            android:defaultValue="kg"
+            android:key="unidade_peso"
+            android:summary="Define a unidade de medida do peso"
+            android:title="Unidade peso" />
+        <EditTextPreference
+            android:defaultValue="mmHg"
+            android:key="unidade_pressao"
+            android:summary="Define a unidade de medida da pressão"
+            android:title="Unidade pressão" />
+        <EditTextPreference
+            android:defaultValue="qtde"
+            android:key="unidade_gordura"
+            android:summary="Define a unidade de medida da gordura corporal"
+            android:title="Unidade gordura" />
+        <EditTextPreference
+            android:defaultValue="%"
+            android:key="unidade_hba1c"
+            android:summary="Define a unidade de medida da HbA1c"
+            android:title="Unidade HbA1c" />
+        <EditTextPreference
+            android:defaultValue="bpm"
+            android:key="unidade_pulso"
+            android:summary="Define a unidade de medida do pulso"
+            android:title="Unidade pulso" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
